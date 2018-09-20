@@ -18,6 +18,7 @@ const db = knex({
 
 
 const app = express();
+const PORT = process.env.PORT;
 
 app.use(bodyParser.json());
 app.use(cors());
@@ -147,4 +148,4 @@ console.log(name, number, expiryDate)
 
 
 
-app.listen(3002);
+app.listen(PORT);
