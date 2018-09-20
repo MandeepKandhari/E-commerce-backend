@@ -9,10 +9,8 @@ const knex = require('knex');
 const db = knex({
   client: 'pg',
   connection: {
-    host : '127.0.0.1',
-    user : 'postgres',
-    password : 'mandeep',
-    database : 'ecommerce'
+    connectionString: process.env.DATABASE_URL,
+  	ssl: true,
   }
 });
 
@@ -20,7 +18,6 @@ const db = knex({
 const app = express();
 const PORT = process.env.PORT;
 
-console.log('Port=',PORT)
 
 app.use(bodyParser.json());
 app.use(cors());
