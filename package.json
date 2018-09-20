@@ -1,0 +1,26 @@
+{
+  "name": "backend-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "express-config": "0.0.1",
+    "file-system": "^2.2.2",
+    "knex": "^0.15.2",
+    "nodemon": "^1.17.5",
+    "pg": "^7.4.3",
+    "watson-developer-cloud": "^3.7.1",
+    "watson-speech": "^0.34.1"
+  }
+}
