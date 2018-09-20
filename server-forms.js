@@ -30,7 +30,7 @@ Payment --> POST --> success/failure
 
 
 app.get('/', (req,res)=>{
-	res.json(database)
+	res.json('This application is working')
 })
 
 
